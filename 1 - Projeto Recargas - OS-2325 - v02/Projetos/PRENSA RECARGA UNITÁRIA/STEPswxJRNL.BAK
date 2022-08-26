@@ -1,0 +1,346 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 08/16/19 by projetos2
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Dim myModelView As Object
+boolstatus = swApp.LoadFile2("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-129-CONJ.STEP", "r")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Take Snapshot
+Dim swSnapShot As SnapShot
+Set swSnapShot = Part.ModelViewManager.AddSnapShot("Página inicial")
+Dim activeModelView As Object
+Set activeModelView = Part.ActiveView
+activeModelView.DisplayMode = swViewDisplayMode_e.swViewDisplayMode_ShadedWithEdges
+' MSGBOX
+' Salvar alterações em OS-2325 - POS-129-CONJ ?
+
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-129-CONJ"
+swApp.ActivateDoc2 "OS-2325 - POS-140.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-140.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-140.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-149.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-149.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-149.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-150.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-150.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-120-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-120-CONJ.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-120-CONJ.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-196.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-196.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-196.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-194  .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-194  .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-194  .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-190 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03577735668404870284, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, 0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.06082150636288279066, 0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1109098057205509802, 0.1683777037074811744
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1538426337414094125, 0.3367554074149623489
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1037543343837412507, 0.3520624713883697132
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1073320700521460946, 0.4209442592687029916
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03935509235245357451, 0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05008829935766818259, -0.2219524276144070052
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0965988630469314935, -0.4821725151623325045
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07871018470490714902, -0.3979836633085918618
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, -0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1609981050782191558, -0.4209442592687029916
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06439924203128766234, -0.1607241717207774923
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03219962101564383117, -0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05724377069447792593, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.06082150636288279066, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03219962101564383117, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0
+
+' Roll View
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-190 .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-190 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-180 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-180 .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-180 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-196.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-196.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-165.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-165.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-165.SLDASM"
+swApp.ExitApp
+End Sub

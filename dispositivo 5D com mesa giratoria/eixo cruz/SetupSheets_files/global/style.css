@@ -1,0 +1,376 @@
+﻿/* Start documentation header comment
+
+PowerMILL Setup Sheets: default cascading style sheet
+
+=============================================================================
+COPYRIGHT 2005 DELCAM PLC., BIRMINGHAM, ENGLAND.
+=============================================================================
+
+History.
+DICC  Who When     What
+===== === ======== ==========================================================
+55767 SPD 26/04/05 Written, based on work done by AW.
+55886 SPD 28/04/05 Formatting for error message, a4page and index classes.
+55941 SPD 09/05/05 Improve the appearance of printed output.
+56175 SPD 20/05/05 Formatting for regeneration link, and browser controls.
+56285 SPD 02/06/05 Added VML stuff, and no_print_breaks class for <thead>.
+56775 SPD 05/07/05 Changes to the image classes.
+56844 SPD 11/07/05 Added vspace class, for improved print layout.
+57697 SPD 14/09/05 Added a comment about US Letter paper.
+59645 SPD 05/02/06 Word wrapping now done here; no longer hard-coded.
+60056 SPD 03/03/06 Added the wrapped class for spans.
+60450 SPD 24/03/06 Made snapshot image widths automatic.
+60637 SPD 05/04/06 Snapshot image display tweaks.
+=============================================================================
+
+End documentation header comment */
+
+
+/* GENERAL FORMATTING: */
+
+body {
+  position: absolute;
+  left: 0.0cm;
+  top: 0.0cm;
+  width: auto;
+  height: auto;
+  margin: 0.0cm;
+  padding: 0.0cm;
+
+  text-align: left;
+  font-family: tahoma;
+  font-size: xx-small;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* A span in which the text is allowed to wrap: used for entity names.  */
+table.browser_controls {
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: none;
+  text-align: left;
+}
+span.wrapped {
+  word-break: break-all; /* N.B. This is a proposed extension to the CSS standard! */
+}
+
+/* Unvisited links */
+a:link {
+  color: #e10000; /* A bright red. */
+}
+/* Visited links */
+a:visited {
+  color: #333298; /* PowerMILL blue. */
+}
+/* User hovers */
+a:hover {
+  color: #000000; /* black */
+  background: #80ff80; /* A bright green --- like highlighter pen. */
+}
+/* Active links */
+a:active {
+  color: #333298; /* PowerMILL blue. */
+}
+
+/* A4 is 21.0cm x 29.7cm, the margins are 0.5cm and 1.5cm. That leaves 20cm x 26.7. */
+div.a4page {
+  position: absolute;
+  left: 0.5cm;
+  top: 0.5cm;
+  width: 28cm;
+  height: 19cm;
+  margin: 0.5cm;
+  padding: 0.0cm;
+  border: solid 1px #eeeeee; /* Very faint border, to mark edge of printable region of page. */
+}
+
+@page {
+  size: 29,7cm 21cm landscape;  /* a4 paper. */
+}
+
+@media print {
+  div.a4page {
+    left: 0cm !important;
+    top: 0cm !important;
+  }
+}
+
+div.vspace {
+  width: auto;
+  height: 6cm;
+}
+
+/* US Letter paper is 21.6cm x 27.9cm. There is no need for a separate CSS class --- the above
+settings can be used, resulting in the following margins when printed on US Letter paper.
+
+  Left      0.5cm    (same as for A4),
+  Top       1.5cm    (same as for A4),
+  Right     0.5cm    (0.60cm larger than with A4),
+  Bottom    1.5cm    (0.93cm smaller than with A4).
+
+If paper other than A4 or US Letter is used, then any and all bets are off.
+
+*/
+
+/* Formatting for the navigation frame. */
+div.index {
+  position: absolute;
+  left: 0.5cm;
+  top: 2cm;
+  width: 50%;
+  height: auto;
+  margin: 0.0cm;
+  padding: 0.0cm;
+  border: solid 1px #eeeeee;
+}
+
+/* TABLE-SPECIFIC FORMATTING: */
+div.error {
+  color: #ff0000; /* red */
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  width: 28cm;
+  height: auto;
+  padding-top: 1.0cm;
+  padding-right: 0.0cm;
+  padding-bottom: 1.0cm;
+  padding-left: 0.0cm;
+  margin: 2px;
+  border: solid 1px #cccccc;
+}
+div.center {
+  text-align: center;
+}
+
+table {
+	cellspacing: 2px;
+	width: 28cm;
+	table-layout: auto;
+	border: thin outset #C0C0C0;
+	page-break-inside: avoid;
+	text-align:left;
+}
+
+thead {
+  display: table-header-group;
+}
+
+td.title {
+	background: #333298; /* PowerMILL blue. */
+	color: #ffffff;
+	text-align: left;
+	border-style: none;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+th {
+	background: #FFFFFF;
+	color: #000000;
+	padding: inherit;
+	border: 1px solid #808080;
+	font-size: xx-small;
+}
+td {
+	border: 1px solid #808080;
+	font-size: xx-small;
+}
+.centertitle {
+	color: #000080;
+	text-align: center;
+	font-weight: bold;
+	font-size: medium;
+	font-family: Arial;
+}
+
+.none {
+	border: none ;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.TopLeft {
+	text-align: left;
+	vertical-align: top;
+}
+.bottom_lft {
+	border-style: none;
+	background: auto;
+	bottom: 1px;
+	position: relative;
+	z-index: auto;
+}
+.bottom_rgt {
+	border-style: none;
+	background: auto;
+	bottom: 1px;
+	position: relative;
+	z-index: auto;
+}
+.azul {
+	color: #0000FF;	
+}
+.vermelho {
+	color: #FF0000;
+}
+.verde {
+	color: #008000;
+}
+
+.bottom {
+	border: thin outset #FF0000;
+}
+
+/* White text in a coloured box. */
+td.title {
+  background: #1173b4; /* PowerMILL blue. */
+  color: #ffffff;
+  border-style: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+tr.summary {
+  background: #eeeeee;
+}
+
+tr.full_summary {
+  background: #cccccc;
+  color: #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-align: left;
+  border: solid 1px #aaaaaa;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: sans-serif;
+  border: solid 1px #aaaaaa;
+}
+
+
+
+
+/* ERROR MESSAGE FORMATTING: */
+
+div.error {
+  color: #ff0000; /* red */
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  width: 16.8cm;
+  height: auto;
+  padding-top: 1.0cm;
+  padding-right: 0.0cm;
+  padding-bottom: 1.0cm;
+  padding-left: 0.0cm;
+  margin: 2px;
+  border: solid 1px #cccccc;
+}
+
+#regen_link {
+  text-decoration: underline;
+  cursor: hand;
+}
+
+
+/* FORMATTING FOR THE BROWSER CONTROLS: */
+
+table.browser_controls {
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: none;
+  text-align: center;
+}
+
+#back_button {
+  background: #cccccc;
+  border-width: 2px;
+  border-style: outset;
+  width: 100px;
+}
+
+#forward_button {
+  background: #cccccc;
+  border-width: 2px;
+  border-style: outset;
+  width: 100px;
+}
+
+/* This "pads out" the right-hand side of the table containing the browser contols. */
+#dummy_button {
+  background: #ffffff;
+  border-style: none;
+  width: auto;
+}
+
+
+
+/* IMAGE STUFF */
+
+/* This is used to force images to be centered. */
+div.center {
+  text-align: center;
+}
+
+img {
+  page-break-inside: avoid;
+}
+
+img.tool_image {
+  width: 0.8cm;
+  height: 0.8cm;
+  border: solid 1px #eeeeee;
+}
+
+
+img.snapshot_image {
+  width: auto;
+  height: 2.2cm;
+  text-align: right;
+
+}
+
+img.snapshot_image {
+  width: auto;
+  height: 5.3cm;
+  text-align: right;
+
+}
+
+img.snapshot_header {
+  width: 13.5cm;
+  height: 13.5cm;
+  text-align: center;
+
+}
+
+img.logo_image {
+  height: 1.5cm;
+  width: auto;
+
+
+}
+
+
+/* Microsoft VML stuff, for the automatically-generated PowerMILL tool image. */
+
+v\:* {
+  behavior: url(#default#VML);
+}

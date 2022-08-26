@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	 <head>
+		 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+		 <title>Folhas de Processo do PowerMill: Erro</title>
+		 <link rel="stylesheet" type="text/css" href="SetupSheets_files/global/style.css" />
+<script language="vbscript" type="text/vbscript">
+	 '' Get the PowerMILL object.
+	 set powermill = window.external
+
+	 '' A subroutine to regenerate all Setup Sheets.
+	 Sub PreviewAllSheets()
+		 Dim sCommand
+		 sCommand = "KEEP SETUPSHEETS NCPROGRAM ALL"
+		 powermill.DoCommand(sCommand)
+	 End Sub
+</script>
+	 </head>
+	 <body>
+		 <div class="a4page">
+		 <table>
+			 <tr><td colspan="2" class="title">Folhas de Processo do PowerMill: Erro</td></tr>
+		 </table>
+		 <div class="error">
+			 <p>
+				Programa(s) NC alterado(s).
+			 </p>
+			 <p>
+				Folhas de Processo devem ser restauradas.
+			 </p>
+			 <p>
+				Para regenerar todas as Folhas de Processo, clique <a onClick="PreviewAllSheets()" id="regen_link">aqui</a>.
+
+			 </p>
+		 </div>
+		 </div>
+	 </body>
+</html>

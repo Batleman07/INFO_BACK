@@ -1,0 +1,32 @@
+type list
+version 0
+Toolpath\
+Toolpath\FURO CENTRO
+Toolpath\FURO Ø10H7
+Toolpath\M10
+Group\
+Pattern\
+Workplane\
+Workplane\1
+Setup\
+FeatureGroup\
+Boundary\
+Macro\
+Featureset\
+Featureset\1
+Featureset\2
+NCProgram\
+NCProgram\40
+NCProgram\41
+NCProgram\42
+Level\
+Level\Config-0-Partition
+Tool\
+Tool\BR-Centro
+Tool\BROCA MD Ø10
+Tool\BROCA Ø8.5
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\eixo

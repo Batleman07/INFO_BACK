@@ -1,0 +1,1169 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 08/16/19 by projetos2
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "OS-2325 - POS-105  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-105  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-170  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-170 .DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-170 .PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-170  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-180  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-180  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-180 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("1.7.1- CANECO DE MEDIÇÃO -1@OS-2325 - POS-180 ", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("1.7.1- CANECO DE MEDIÇÃO -1@OS-2325 - POS-180 ", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.EditRebuild3()
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-180 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-180  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-180 .DWG", 0, 0)
+' MSGBOX
+' Salvar alterações em OS-2325 - POS-180  - Folha1 ?
+
+Part.SetPickMode
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-180  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-181 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-181.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-181.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-181 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-182 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-182.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-182.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-182 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-183 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-183.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-183.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-183 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-184 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-184.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-184.PDF", 0, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-184 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-190  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ActivateView("Vista de desenho1")
+boolstatus = Part.Extension.SelectByRay(0.09543268175232053063, 0.1514275840622786862, 0, 0, 0, -1, 0.0006740859117184565307, 46, False, 0, 0)
+
+Dim myNote As Object
+Dim myAnnotation As Object
+Dim myTextFormat As Object
+Set myNote = Part.InsertNote("RECARTILHADO")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swUNDERLINED, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.1009839774958843084, 0.1615388727380555611, 0)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID2("Item de detalhe152@Vista de desenho1", "NOTE", 0.09560526139652798794, 0.1516643104284829957, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Folha1")
+boolstatus = Part.Extension.SelectByID2("Folha1", "SHEET", 0.1242840710258458353, 0.1306331833669832632, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-190 .DWG", 0, 0)
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-190 .PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-190  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-191 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-191.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-191.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-191 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-192 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-192.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-192.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-192 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-193 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-193.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-193.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-193 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-194 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Vista de desenho1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de desenho1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Vista de desenho2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de desenho2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-194.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-194.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-194 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-196 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+Part.PrintDirect
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\OS-2325 - POS-196.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\OS-2325 - POS-196.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-196 - Folha1"
+swApp.ActivateDoc2 "SO-2325 - POS-160 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.SheetPrevious
+
+' Redraw
+Part.GraphicsRedraw2
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom to Area
+Part.ViewZoomTo2 0, 0, 0, 0.1000000000000000056, 0.1000000000000000056, 0.1000000000000000056
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\DWG\SO-2325 - POS-160.DWG", 0, 0)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\PDF\SO-2325 - POS-160.PDF", 0, 0)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "SO-2325 - POS-160 - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-200-OPERAÇAO .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("OS-2325 - POS-200-OPERAÇAO .SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("OS-2325 - POS-200-OPERAÇAO .SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-200-OPERAÇAO .STEP", 0, 0)
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200-OPERAÇAO .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-200 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1778479221765799645, 0.05699981937561618417, 0.4169212386242886481, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.225516472233201648, 0.06792363776154011767, 0.3759296765091353909, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1111641156324486013, 0.01007850651693020794, 0.3586258248864434561, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.2677668314516011283, 0.08631411476689293538, 0.3714247940949283455, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1025829816704266761, 0.005974176457828439535, 0.3581914584236216559, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1067922452089864471, -0.001343612284241180177, 0.3243010017918038779, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1669882252437029369, 0.02417600793048207963, 0.3153896696958746748, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.3565481732912002544, 0.1473218477199758902, 0.4436936837211326035, False, 0, Nothing, 0)
+
+' Zoom In/Out (MouseWheel)
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.5590552182206912635
+Dim swTranslation() As Double
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = 0.1642851080176314094
+swTranslation(1) = -0.1466180542912022544
+swTranslation(2) = -0.06873562973269006782
+Dim swTranslationVar As Variant
+swTranslationVar = swTranslation
+Dim swMathUtils As Object
+Set swMathUtils = swApp.GetMathUtility()
+Dim swTranslationVector As MathVector
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.6735605038803509359
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = 0.2042710578665449528
+swTranslation(1) = -0.1838602645137621949
+swTranslation(2) = -0.08281401172613259143
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.3564947718675626764, 0.1475665715424911983, 0.4446787570865409767, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.3300064482043174041, 0.1007107503038660035, 0.3183917404562359721, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.3141494232728312408, 0.09332514284389670234, 0.3183155087826762264, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.2233476813121758053, 0.04800673821024836752, 0.3068181372965219089, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1768215576827235069, 0.02565405648666538307, 0.3040998263289188541, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1376399549840885972, 0.005621682976223063566, 0.2973946972626843599, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.3473786668060339089, 0.1275508465558731208, 0.3869989427570632023, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-200-a .STEP", 0, 0)
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", 0.1040857149217013777, -0.08503263120671541997, 0.3763920889010546889, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' Existe um arquivo de desenho com o mesmo nome do modelo. Você deseja abrir este arquivo?
+
+
+' New Document
+Dim swSheetWidth As Double
+swSheetWidth = 0.2099999999999999922
+Dim swSheetHeight As Double
+swSheetHeight = 0.2969999999999999862
+Set Part = swApp.NewDocument("F:\Projetos\Biblioteca 3D\SolidWorks\TEMPLATES SOLIDWORKS\Desenho.drwdot", 12, swSheetWidth, swSheetHeight)
+Dim swDrawing As DrawingDoc
+Set swDrawing = Part
+Set swDrawing = Part
+Dim swSheet As sheet
+Set swSheet = swDrawing.GetCurrentSheet()
+swSheet.SetProperties2 12, 12, 1, 10, False, swSheetWidth, swSheetHeight, True
+swSheet.SetTemplateName "F:\Projetos\Biblioteca 3D\SolidWorks\TEMPLATES SOLIDWORKS\Formato de folha Convento's\A4.slddrt"
+swSheet.ReloadTemplate True
+boolstatus = Part.GenerateViewPaletteViews("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\OS-2325 - POS-200 .SLDASM")
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200  - Folha1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-200 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-200  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-201 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-201 .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-201 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-202.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-202.STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-202.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-203 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.EditRebuild3()
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-203 .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-203 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-204.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-204.STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-204.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-200  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-200 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-200  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.PrintDirect
+Part.PrintDirect
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-200  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-219 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-219 .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-219 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-230.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-230.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-230.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-230 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-230 - Folha1"
+swApp.ExitApp
+End Sub

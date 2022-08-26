@@ -1,0 +1,42 @@
+type list
+version 0
+Toolpath\
+Toolpath\1-fix\
+Toolpath\1-fix\DESBASTE
+Toolpath\1-fix\ACABAMENTO
+Toolpath\1-fix\FURO CENTRO
+Toolpath\1-fix\FURO Ø 6,8
+Toolpath\2-fix\
+Toolpath\2-fix\CHANFRADOR
+Group\
+Pattern\
+Workplane\
+Workplane\1-fix
+Workplane\2-fix
+Setup\
+FeatureGroup\
+Boundary\
+Macro\
+Featureset\
+Featureset\1
+NCProgram\
+NCProgram\Pasta1\
+NCProgram\Pasta1\1
+NCProgram\Pasta1\2
+NCProgram\Pasta1\3
+NCProgram\Pasta1\4
+NCProgram\Pasta2\
+NCProgram\Pasta2\5
+Level\
+Level\0
+Tool\
+Tool\1
+Tool\2
+Tool\BR-Centro
+Tool\BR-Ø6,8
+Tool\3
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\porca T

@@ -1,0 +1,23 @@
+20 4 2019202 2019210 64 # Entity Index (DO NOT EDIT!)
+0 0
+11 abr 2019 06.54.08
+x4f6d48f05caf0ad501204b7200000000.pmlent pmlEntModel 'porca T'
+x4c8fa5c05caf0adc01204f9100000000.pmlent pmlEntLevel '0'
+x3ff08fd05caf0c970120c41e00000000.pmlent pmlEntWorkplane '1-fix'
+x3ff0a1505caf0c970120c42800000000.pmlent pmlEntWorkplane '2-fix'
+x3ff06cb05caf0c9b0120c9f300000000.pmlent pmlEntTool '1'
+x3ff06db05caf0c9b0120c9f600000000.pmlent pmlEntToolpath 'DESBASTE'
+x408762a05caf0ca00121552000000000.pmlent pmlEntTool '2'
+x408723c05caf0ca00121552300000000.pmlent pmlEntToolpath 'ACABAMENTO'
+x4fdb35405caf0dc30123b61000000000.pmlent pmlEntFeature '1'
+x4c8faa205caf0dda0123fc3e00000000.pmlent pmlEntTool 'BR-Centro'
+x44478c405caf0ddb012412ec00000000.pmlent pmlEntToolpath 'FURO CENTRO'
+x4412da305caf0dde0124592a00000000.pmlent pmlEntTool 'BR-Ø6,8'
+x44073fa05caf0ddf012468ff00000000.pmlent pmlEntToolpath 'FURO Ø 6,8'
+x441294105caf0e180125a71e00000000.pmlent pmlEntTool '3'
+x4412a4505caf0e180125a72100000000.pmlent pmlEntToolpath 'CHANFRADOR'
+x468a34705caf0e540128cafe00000000.pmlent pmlEntNCProgram '1'
+x53e2cbd05caf0e540128ccda00000000.pmlent pmlEntNCProgram '2'
+x53e328505caf0e540128cee400000000.pmlent pmlEntNCProgram '3'
+x50a1a5b05caf0e540128d0f400000000.pmlent pmlEntNCProgram '4'
+x468a50b05caf0e550128dbfb00000000.pmlent pmlEntNCProgram '5'

@@ -1,0 +1,56 @@
+type list
+version 0
+Toolpath\
+Toolpath\LADO 1\
+Toolpath\LADO 1\DESBASTE
+Toolpath\LADO 1\DESB/MIOLO
+Toolpath\LADO 1\ACAB/CONTORNO
+Toolpath\LADO 1\FURO CENTRO
+Toolpath\LADO 1\BROCA 9
+Toolpath\LADO 1\FURO PASSANTE REF
+Toolpath\LADO 1\CHANFRO
+Toolpath\LADO 2\
+Toolpath\LADO 2\DESBASTE2
+Toolpath\LADO 2\ACABAMENTO
+Toolpath\LADO 2\CABEÇAS
+Group\
+Pattern\
+Workplane\
+Workplane\1
+Workplane\2
+Setup\
+FeatureGroup\
+Boundary\
+Boundary\1
+Boundary\DIAMETRO
+Macro\
+Featureset\
+Featureset\1
+Featureset\2
+NCProgram\
+NCProgram\1
+NCProgram\2
+NCProgram\3
+NCProgram\4
+NCProgram\5
+NCProgram\6
+NCProgram\7
+NCProgram\8
+NCProgram\9
+NCProgram\10
+Level\
+Level\0
+Level\Planes
+Tool\
+Tool\cab25r1.8
+Tool\CAB25R0.8
+Tool\BROCA/CENTRO
+Tool\BROCA 9
+Tool\FRESA
+Tool\REBAIXADOR
+Process\
+MachineTool\
+StockModel\
+StockModel\1
+Model\
+Model\mesa giratoria

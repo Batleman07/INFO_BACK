@@ -1,0 +1,44 @@
+{
+	"type" : "Project",
+	"time" : "1556292736",
+	"version" : "0"
+}
+{
+	"Programmer" "S" "Nome do programador que criou este projeto." "5f2a7c105cae2a2c004b07bc00000000" : "alcir.albrecht",
+	"Customer" "S" "Nome do cliente a que este projeto se refere." "5f2a5af05cae2a2c004b07be00000000" : "",
+	"TextBlocks" "M" "Um suporte de posição para objetos de texto." "5f2aedb05cae2a2c004b07c000000000" : {
+	},
+	"HoleTagCatalog" "S" "Último catálogo utilizado para esse projeto." "5f2ae2505cae2a2c004b07c200000000" : "",
+	"FusionProductionJob" : {
+		"Name" : "${project_pathname(1)}",
+		"Instructions" : "${Project.Notes}",
+		"Tags" : (
+		),
+		"TaskList" : (
+		)
+	},
+	"A360" "M" "Configurações A360 para este projeto PowerMill." : {
+		"Hub" "S" "ID A360 Hub" : "",
+		"Folder" "S" "ID Pasta A360" : "",
+		"Project" "S" "ID Projeto A360" : ""
+	},
+	"ThicknessSets" "M" "Um suporte de posição para configuração sobremetal." "5f2ac3b05cae2a2c004b07c800000000" : {
+	},
+	"PartName" "S" "Nome da peça para este projeto." "5f2aff905cae2a2c004b07ca00000000" : "",
+	"ProjectHistory" "LM" "histórico de projeto." "5f2aaf305cae2a2c004b07cc00000000" : (
+		{
+			"ClientName" "S" "Nome de produto do cliente." "44c2bd805cae2a2c004b07ce00000000" : "PowerMill",
+			"ClientVersion" "S" "Versão de produto do cliente." "44c2bbc05cae2a2c004b07d000000000" : "2019201",
+			"DmkCodebase" "S" "Número codebase de bibliotecas Delcam." "44c2d0c05cae2a2c004b07d200000000" : "2019209"
+		},
+		{
+			"ClientName" "S" "Nome de produto do cliente." "49a44c705caefbb50016f0d700000000" : "PowerMill",
+			"ClientVersion" "S" "Versão de produto do cliente." "49a4e8305caefbb50016f0d900000000" : "2019202",
+			"DmkCodebase" "S" "Número codebase de bibliotecas Delcam." "49a46a505caefbb50016f0db00000000" : "2019210"
+		}
+	),
+	"Tolerances" "M" "Um suporte de posição para valores de tolerância." "5f2aa7b05cae2a2c004b07d400000000" : {
+	},
+	"OrderNumber" "S" "Número de pedido para este projeto." "44c2cf005cae2a2c004b07d600000000" : "",
+	"Notes" "S" "Notas para este projeto." "44c288a05cae2a2c004b07d800000000" : ""
+}

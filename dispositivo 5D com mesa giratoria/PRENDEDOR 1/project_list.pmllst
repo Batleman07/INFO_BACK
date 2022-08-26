@@ -1,0 +1,62 @@
+type list
+version 0
+Toolpath\
+Toolpath\1FIX\
+Toolpath\1FIX\DESBASTE_
+Toolpath\1FIX\ACB
+Toolpath\1FIX\CHANFRO
+Toolpath\1FIX\CANTO
+Toolpath\1FIX TRAS\
+Toolpath\1FIX TRAS\DES
+Toolpath\1FIX TRAS\ACAB/TRAS
+Toolpath\1FIX TRAS\CHANF
+Toolpath\1
+Toolpath\DESBATE FRENTE
+Toolpath\DESBATE FRENTE_1
+Toolpath\CANTO FRENTE
+Toolpath\CHAN/FRENTE
+Toolpath\ACB/FRENTE
+Group\
+Pattern\
+Workplane\
+Workplane\1
+Workplane\2
+Workplane\3
+Setup\
+FeatureGroup\
+Boundary\
+Boundary\1_1
+Boundary\1
+Boundary\CORTE
+Boundary\2
+Boundary\3
+Boundary\4
+Macro\
+Featureset\
+Featureset\1
+Featureset\2
+NCProgram\
+NCProgram\30
+NCProgram\31
+NCProgram\32
+NCProgram\33
+NCProgram\34
+NCProgram\35
+NCProgram\36
+NCProgram\37
+NCProgram\38
+NCProgram\39
+NCProgram\40
+Level\
+Level\Config-0-Partition
+Tool\
+Tool\CAB25 R1.8
+Tool\CAB 25 R0.8
+Tool\CHANFRADOR
+Tool\BROCA CENTRO
+Tool\CAB 12R0.8
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\complemento lateral

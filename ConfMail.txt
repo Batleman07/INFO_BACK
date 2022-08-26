@@ -1,0 +1,32 @@
+==================================================
+Name              : Dayane - Convento´s Ferramentaria
+Application       : Outlook 2013
+Email             : administrativo1@conventos.ind.br
+Server            : pop.conventos.ind.br
+Server Port       : 
+Secured           : No
+Type              : POP3
+User              : administrativo1@conventos.ind.br
+Password          : C0nv3nt0$7853
+Profile           : Outlook
+Password Strength : Very Strong
+SMTP Server       : smtp.conventos.ind.br
+SMTP Server Port  : 587
+==================================================
+
+==================================================
+Name              : NFE - Convento´s Ferramentaria
+Application       : Outlook 2013
+Email             : nfe@conventos.ind.br
+Server            : pop.conventos.ind.br
+Server Port       : 
+Secured           : No
+Type              : POP3
+User              : nfe@conventos.ind.br
+Password          : C0nv3nt0$2381
+Profile           : Outlook
+Password Strength : Very Strong
+SMTP Server       : smtp.conventos.ind.br
+SMTP Server Port  : 587
+==================================================
+

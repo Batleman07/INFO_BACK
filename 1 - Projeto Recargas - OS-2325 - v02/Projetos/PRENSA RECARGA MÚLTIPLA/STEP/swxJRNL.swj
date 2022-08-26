@@ -1,0 +1,1879 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 08/16/19 by projetos2
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Dim myModelView As Object
+boolstatus = swApp.LoadFile2("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-230.STEP", "r")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Take Snapshot
+Dim swSnapShot As SnapShot
+Set swSnapShot = Part.ModelViewManager.AddSnapShot("Página inicial")
+Dim activeModelView As Object
+Set activeModelView = Part.ActiveView
+activeModelView.DisplayMode = swViewDisplayMode_e.swViewDisplayMode_ShadedWithEdges
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01073320700521460981, -0.007653531986703689116
+
+' Roll View
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.EditRebuild3()
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Montagem1"
+swApp.ActivateDoc2 "os-2325 - POS-240 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\os-2325 - POS-240 .STEP", 0, 0)
+boolstatus = Part.EditRebuild3()
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "os-2325 - POS-240 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-245.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-245.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-246 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-246 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-247.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-247.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-247.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-248.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-248.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-249.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-249.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-249.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-251.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-251.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-250 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-249.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-249.SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-250 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-250 .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-250 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-255.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-255.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-260 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-260 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-262.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-262.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-264 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.1454171077473701001
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.2525665555612217616
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05008829935766818259, -0.2908342154947402003
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04651056368926331092, -0.3673695353617770776
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.2831806835080364904
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.2525665555612217616
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, -0.2525665555612217616
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1001765987153363652, -0.3214483434415549845
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01073320700521460981, 0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, 0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0.1454171077473701001
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1216430127257655813, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05724377069447792593, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1860422547570532437, -0.2296059596011106874
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.08586565604171687849, -0.1760312356941848566
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05724377069447792593, -0.2372594915878143695
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, 0.3673695353617770776
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0965988630469314935, 0.5893219629761841105
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.07155471336809740568, 0.1913382996675922487
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1609981050782191558, 0.2449130235745180517
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07155471336809740568, 0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0965988630469314935, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.1989918316542959309
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03577735668404870284, -0.7423926027102579761
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.04293282802085843924, -0.5051331111224435233
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05724377069447792593, -0.2525665555612217616
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, -0.1148029798005553437
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1144875413889558519, 0.3520624713883697132
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.2754856464671749938, 0.8418885185374059832
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.2432860254515311627, 0.4056371952952955717
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.08228792037331202069, 0.2219524276144070052
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.08944339171012175016, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02862188534723896297, -0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1073320700521460946, -0.4821725151623325045
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1037543343837412507, -0.2755271515213328359
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.193197726093862987, -0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06439924203128766234, -0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07871018470490714902, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07155471336809740568, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1109098057205509802, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06797697769969253401, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03219962101564383117, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.04293282802085843924, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07871018470490714902, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1609981050782191558, -0.2831806835080364904
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, -0.2908342154947402003
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1037543343837412507, -0.3750230673484807875
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.08944339171012175016, -0.1989918316542959309
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05366603502607304732, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0.3444089394016660033
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.4362513232421103559
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06439924203128766234, 0.2142988956277032953
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, 0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.130110043773962708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, 0.130110043773962708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.130110043773962708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03577735668404870284, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02862188534723896297, -0.2066453636409996131
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04293282802085843924, -0.3367554074149623489
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02862188534723896297, -0.3214483434415549845
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.3979836633085918618
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.2449130235745180517
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04651056368926331092, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04293282802085843924, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03935509235245357451, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02862188534723896297, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.135953955399385068, 0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1824645190886483859, 0.2066453636409996131
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1538426337414094125, 0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1216430127257655813, 0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.09302112737852662183, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04651056368926331092, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03935509235245357451, 0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01073320700521460981, 0.1760312356941848566
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02862188534723896297, 0.2908342154947402003
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02862188534723896297, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07155471336809740568, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1073320700521460946, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05724377069447792593, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05724377069447792593, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, -0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1252207483941704391, -0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03935509235245357451, -0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, -0.06888178788033320898
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02862188534723896297, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02862188534723896297, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01073320700521460981, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01073320700521460981, -0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03935509235245357451, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.04651056368926331092, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, 0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.05366603502607304732, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.06439924203128766234, 0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1037543343837412507, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.08944339171012175016, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.06797697769969253401, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.07155471336809740568, -0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06797697769969253401, -0.137763575760666418
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01431094267361948148, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03577735668404870284, 0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, 0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, 0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.09949591582714796545
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05724377069447792593, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003577735668404870371, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.04293282802085843924, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03577735668404870284, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.09302112737852662183, -0.1836847676808885388
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1502648980730045547, -0.4285977912554065905
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.04293282802085843924, -0.130110043773962708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01788867834202435142, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02862188534723896297, 0.2219524276144070052
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.2142988956277032953
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, 0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.09184238384044426939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02504414967883409129, 0.1071494478138516476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02146641401042921962, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1001765987153363652, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06439924203128766234, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.1144875413889558519, -0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.08944339171012175016, -0.3597160033750734232
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.06439924203128766234, -0.3137948114548512746
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.04293282802085843924, -0.1989918316542959309
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1037543343837412507, 0.1836847676808885388
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.06082150636288279066, 0.07653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.07513244903650227735, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03577735668404870284, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03935509235245357451, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02504414967883409129, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02146641401042921962, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.1224565117872590259
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, -0.2219524276144070052
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03061412794681475646
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.1148029798005553437
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.1530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, -0.05357472390692582381
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01788867834202435142, -0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.02296059596011106735
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.01530706397340737823
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007155471336809740741, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003577735668404870371, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03219962101564383117, 0.03826765993351844558
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01431094267361948148, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01073320700521460981, 0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.07513244903650227735, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.05366603502607304732, 0.06122825589362951293
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007155471336809740741, -0.08418885185374058722
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007653531986703689116
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0459211919202221347
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03061412794681475646
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-264 .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-264 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-268.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02130466492746581689, 0.1034565493884216508
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03195699739119872013, 0.2387458832040499912
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02485544241537678348, 0.1909967065632399708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03195699739119872013, 0.2148712948836449532
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02840621990328775007, 0.2387458832040499912
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007101554975821937517, 0.03183278442720666179
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003550777487910968758, 0.02387458832040499634
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007958196106801665448
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.1512057260292316296
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.08754015717481831993
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02130466492746581689, -0.1114147454952233163
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03550777487910969366, -0.2626204715244549459
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02130466492746581689, -0.1909967065632399708
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003550777487910968758, -0.09549835328161998538
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007958196106801665448
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007958196106801665448
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.09549835328161998538
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0159163922136033309
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007958196106801665448
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01420310995164387503, -0.02387458832040499634
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02840621990328775007, -0.03183278442720666179
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.007958196106801665448
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-268.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-264  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-264  - Folha1"
+swApp.ActivateDoc2 "OS-2325 - POS-264 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("OS-2325 - POS-268-2@OS-2325 - POS-264 ", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByRay(-0.02289670657893339012, -0.006614752834195769537, 0.06063160668207956405, 0.4596298799629564003, 0.8174638058395286011, 0.3471214478933733472, 0.0005353760705199871531, 2, False, 0, 0)
+Part.OpenCompFile
+
+' Open
+Set Part = swApp.OpenDoc6("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\OS-2325 - POS-268.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-268.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01065233246373290844, 0.02387458832040499634
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02130466492746581689, 0.06366556885441332359
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02485544241537678348, 0.1671221182428349883
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007101554975821937517, 0.08754015717481831993
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01420310995164387503, 0.1114147454952233163
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007101554975821937517, 0.07958196106801665448
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-268.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-264 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-264 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-270 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-280.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-285.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-285.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-280.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+Part.PrintDirect
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-280.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-280.SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-270 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-289 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-290.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-291 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-291 .SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-290.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-290.SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-289 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-289 .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-289 .SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-270 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-270 .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-270 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-289 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-289 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-290.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-290.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-290.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-291 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-291  - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-291  - Folha1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-291 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-291 .STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-291 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-292 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-292 .SLDPRT"
+swApp.ActivateDoc2 "OS-2326 - POS-269.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2326 - POS-269.STEP", 0, 0)
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2326 - POS-269.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-299.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-293-EXP .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA MÚLTIPLA\STEP\OS-2325 - POS-293-EXP .STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-293-EXP .SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-299.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-299.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-100-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-101 - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-101 - Folha1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-100-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-100-CONJ - Folha1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.PrintDirect
+Part.PrintDirect
+' MSGBOX
+' Salvar alterações em OS-2325 - POS-100-CONJ - Folha1 ?
+
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-100-CONJ - Folha1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-100-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", -0.1823124137209918283, 0.1482830193017107279, 0.1113833806024728951, False, 0, Nothing, 0)
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.536645464540442152
+Dim swTranslation() As Double
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.02486682494141556621
+swTranslation(1) = 0.1083331118015279093
+swTranslation(2) = 0.03004524655758004578
+Dim swTranslationVar As Variant
+swTranslationVar = swTranslation
+Dim swMathUtils As Object
+Set swMathUtils = swApp.GetMathUtility()
+Dim swTranslationVector As MathVector
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.4472045537837018303
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.01571307337538685803
+swTranslation(1) = 0.0902775931679399013
+swTranslation(2) = 0.02503770546465005492
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.3726704614864181919
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.008084947070363007401
+swTranslation(1) = 0.07523132763994994088
+swTranslation(2) = 0.02086475455387504577
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.4490005560077328095
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.03280999584135081693
+swTranslation(1) = 0.08776811586341209948
+swTranslation(2) = 0.02513825849864463613
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.5409645253105215268
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.062535388163201866
+swTranslation(1) = 0.1028726799880653742
+swTranslation(2) = 0.03028705843210197438
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.6517644883259295918
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.09802999852777249945
+swTranslation(1) = 0.1210071269528867344
+swTranslation(2) = 0.03649043184590599481
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.785258419669794927
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.132880529283174259
+swTranslation(1) = 0.1464937729340401729
+swTranslation(2) = 0.0439643757179590533
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+
+' Zoom In/Out (MouseWheel)
+Set swModelView = Part.ActiveView
+swModelView.Scale2 = 0.9460944815298735211
+ReDim swTranslation(0 To 2) As Double
+swTranslation(0) = -0.1748691205547427685
+swTranslation(1) = 0.177200575320971998
+swTranslation(2) = 0.05296912737103503382
+swTranslationVar = swTranslation
+Set swMathUtils = swApp.GetMathUtility()
+Set swTranslationVector = swMathUtils.CreateVector((swTranslationVar))
+swModelView.Translation3 = swTranslationVector
+boolstatus = Part.Extension.SelectByID2("Item de detalhe1@Anotações", "ANNOTATIONTABLES", 0.167726278824284869, -0.1530493340181051931, 0.1860362933253850715, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-100-CONJ.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-100-CONJ.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-119-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-119-CONJ.STEP", 0, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-121.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-121.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-119-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-119-CONJ.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-124.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-124.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-125.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-125.SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-126 .SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-126 .SLDPRT"
+swApp.ActivateDoc2 "OS-2325 - POS-129-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.EditRebuild3()
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("F:\Projetos\FERR E DISP EM DESENVOLVIMENTO\JESUS EQUIPAMENTOS\1 - Projeto Recargas - OS-2325 - v02\Projetos\PRENSA RECARGA UNITÁRIA\STEP\OS-2325 - POS-129-CONJ.STEP", 0, 0)
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-129-CONJ.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-140.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-140.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-196.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-196.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-190 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-190 .SLDASM"
+swApp.ActivateDoc2 "SO-2325 - POS-160.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "SO-2325 - POS-160.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-180 .SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-180 .SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-165.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-165.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-156.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-156.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-149.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-149.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-140.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-130-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-130-CONJ.SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "OS-2325 - POS-140.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-140.SLDASM"
+swApp.ActivateDoc2 "OS-2325 - POS-129-CONJ.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+swAssembly = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OS-2325 - POS-129-CONJ.SLDASM"
+swApp.ExitApp
+End Sub

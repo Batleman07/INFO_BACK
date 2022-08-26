@@ -1,0 +1,68 @@
+type list
+version 0
+Toolpath\
+Toolpath\1FIX\
+Toolpath\1FIX\DESB
+Toolpath\1FIX\ACB
+Toolpath\1FIX\FUROCENTRO
+Toolpath\1FIX\REBAIXO18
+Toolpath\1FIX\CHANFROS
+Toolpath\2FIX\
+Toolpath\2FIX\FURO CENTRO
+Toolpath\2FIX\FURO 8.5
+Toolpath\2FIX\CHANFRO
+Toolpath\3FIX\
+Toolpath\3FIX\CHAN/INFE
+Group\
+Pattern\
+Workplane\
+Workplane\1
+Workplane\1_1
+Workplane\2
+Setup\
+FeatureGroup\
+Boundary\
+Boundary\1
+Macro\
+Featureset\
+Featureset\1
+Featureset\2
+NCProgram\
+NCProgram\1FIX\
+NCProgram\1FIX\20
+NCProgram\1FIX\21
+NCProgram\1FIX\22
+NCProgram\1FIX\23
+NCProgram\1FIX\24
+NCProgram\25
+NCProgram\26
+NCProgram\27
+NCProgram\28
+Level\
+Level\Config-0-Partition
+Tool\
+Tool\CAB25R1.8
+Tool\BROCACENTRO
+Tool\REBAIXADOR 18
+Tool\CHANFRADOR
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\base lateral
+Toolpath\
+Group\
+Pattern\
+Workplane\
+Setup\
+FeatureGroup\
+Boundary\
+Macro\
+Featureset\
+NCProgram\
+Level\
+Tool\
+Process\
+MachineTool\
+StockModel\
+Model\

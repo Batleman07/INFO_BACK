@@ -1,0 +1,81 @@
+type list
+version 0
+Toolpath\
+Toolpath\1-fix\
+Toolpath\1-fix\DESBASTE
+Toolpath\1-fix\DESBASTE Ø 60
+Toolpath\1-fix\ACABA PLANO
+Toolpath\1-fix\ACABA ALIVIO
+Toolpath\1-fix\PRE ACABA Ø 60
+Toolpath\1-fix\ACABA CANAL
+Toolpath\1-fix\ACABA CANAL T
+Toolpath\1-fix\ACABA CANAL T_
+Toolpath\1-fix\MANDRILHA Ø 60
+Toolpath\1-fix\CHANFRADOR
+Toolpath\2-fix\
+Toolpath\2-fix\CHANFRADOR_1
+Group\
+Pattern\
+Pattern\1
+Workplane\
+Workplane\1-fix
+Workplane\2-fix
+Setup\
+Setup\1\\
+FeatureGroup\
+Boundary\
+Boundary\1
+Boundary\2
+Boundary\3
+Boundary\4
+Boundary\5
+Macro\
+Featureset\
+Featureset\1
+NCProgram\
+NCProgram\Pasta1\
+NCProgram\Pasta1\1
+NCProgram\Pasta1\2
+NCProgram\Pasta1\3
+NCProgram\Pasta1\4
+NCProgram\Pasta1\5
+NCProgram\Pasta1\6
+NCProgram\Pasta1\7
+NCProgram\Pasta1\8
+NCProgram\Pasta1\9
+NCProgram\Pasta1\10
+NCProgram\Pasta2\
+Level\
+Level\0
+Level\Lachas: 0
+Tool\
+Tool\1
+Tool\Cab-Ø20,R0,8
+Tool\Freza T Ø 38
+Tool\Cab-Ø25,R0,8
+Tool\2
+Tool\MANDRILHADOR Ø 50
+Tool\MANDRILHADOR Ø 60
+Tool\3
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\eixo cruz
+Model\Lachas
+Toolpath\
+Group\
+Pattern\
+Workplane\
+Setup\
+FeatureGroup\
+Boundary\
+Macro\
+Featureset\
+NCProgram\
+Level\
+Tool\
+Process\
+MachineTool\
+StockModel\
+Model\

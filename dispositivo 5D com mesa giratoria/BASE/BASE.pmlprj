@@ -1,0 +1,18 @@
+15 4 2019103 2019124 64 # Entity Index (DO NOT EDIT!)
+0 1
+07 mar 2019 15.36.51
+x09b1d7e05c81209f00001b9f00000000.pmlent pmlEntModel 'base da mesa fresadora'
+x3e7946f05c8120ba00001f3700000000.pmlent pmlEntLevel '0'
+x18420e005c8125590000788e00000000.pmlent pmlEntWorkplane '1'
+x44239b305c8125f40000e1e800000000.pmlent pmlEntTool '1'
+x44239b505c8125f60000e45800000000.pmlent pmlEntTool 'cab25r1.8'
+x441fca705c815e9d00019eca00000000.pmlent pmlEntBoundary '1'
+x441f9c505c815eda0001d24700000000.pmlent pmlEntToolpath 'desbaste1'
+x475375905c81616800092ee400000000.pmlent pmlEntBoundary '3'
+x3eeefeb05c8161d90009ee9900000000.pmlent pmlEntToolpath 'desbaste 2'
+x474bbae05c8161da0009f96b00000000.pmlent pmlEntBoundary '2_1'
+x480f31705c816371000cb79b00000000.pmlent pmlEntNCProgram '10'
+x480f4a505c816376000cbc4900000000.pmlent pmlEntNCProgram '11'
+x482b53005c8163cb000d1ef300000000.pmlent pmlEntTool 'FRESA 12'
+x441fba705c816463000dcf4400000000.pmlent pmlEntToolpath 'ACAB'
+x48a765b05c816490000e4e7b00000000.pmlent pmlEntNCProgram '12'

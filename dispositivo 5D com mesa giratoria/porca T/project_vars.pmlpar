@@ -1,0 +1,39 @@
+{
+	"type" : "Project",
+	"time" : "1554978087",
+	"version" : "0"
+}
+{
+	"Programmer" "S" "Nome do programador que criou este projeto." "468a1df05caf0e4601272f0c00000000" : "alcir.albrecht",
+	"Customer" "S" "Nome do cliente a que este projeto se refere." "468a44705caf0e4601272f0e00000000" : "",
+	"TextBlocks" "M" "Um suporte de posição para objetos de texto." "468a7e505caf0e4601272f1000000000" : {
+	},
+	"HoleTagCatalog" "S" "Último catálogo utilizado para esse projeto." "468a3a105caf0e4601272f1200000000" : "",
+	"FusionProductionJob" : {
+		"Name" : "${project_pathname(1)}",
+		"Instructions" : "${Project.Notes}",
+		"Tags" : (
+		),
+		"TaskList" : (
+		)
+	},
+	"A360" "M" "Configurações A360 para este projeto PowerMill." : {
+		"Hub" "S" "ID A360 Hub" : "",
+		"Folder" "S" "ID Pasta A360" : "",
+		"Project" "S" "ID Projeto A360" : ""
+	},
+	"ThicknessSets" "M" "Um suporte de posição para configuração sobremetal." "468a59505caf0e4601272f1800000000" : {
+	},
+	"PartName" "S" "Nome da peça para este projeto." "468a2e305caf0e4601272f1a00000000" : "",
+	"ProjectHistory" "LM" "histórico de projeto." "468a47305caf0e4601272f1c00000000" : (
+		{
+			"ClientName" "S" "Nome de produto do cliente." "468a2e705caf0e4601272f1e00000000" : "PowerMill",
+			"ClientVersion" "S" "Versão de produto do cliente." "468a5dd05caf0e4601272f2000000000" : "2019202",
+			"DmkCodebase" "S" "Número codebase de bibliotecas Delcam." "468a3cf05caf0e4601272f2200000000" : "2019210"
+		}
+	),
+	"Tolerances" "M" "Um suporte de posição para valores de tolerância." "468a2b105caf0e4601272f2400000000" : {
+	},
+	"OrderNumber" "S" "Número de pedido para este projeto." "468a8db05caf0e4601272f2600000000" : "",
+	"Notes" "S" "Notas para este projeto." "468a57705caf0e4601272f2800000000" : ""
+}

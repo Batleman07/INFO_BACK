@@ -1,0 +1,35 @@
+type list
+version 0
+Toolpath\
+Toolpath\Pasta1\
+Toolpath\Pasta1\desbaste1
+Toolpath\Pasta2\
+Toolpath\Pasta2\desbaste 2
+Toolpath\ACAB
+Group\
+Pattern\
+Workplane\
+Workplane\1
+Setup\
+FeatureGroup\
+Boundary\
+Boundary\1
+Boundary\3
+Boundary\2_1
+Macro\
+Featureset\
+NCProgram\
+NCProgram\10
+NCProgram\11
+NCProgram\12
+Level\
+Level\0
+Tool\
+Tool\1
+Tool\cab25r1.8
+Tool\FRESA 12
+Process\
+MachineTool\
+StockModel\
+Model\
+Model\base da mesa fresadora

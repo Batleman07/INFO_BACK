@@ -1,0 +1,129 @@
+{
+	"type" : "Project",
+	"time" : "1552380706",
+	"version" : "0"
+}
+{
+	"Programmer" "S" "Nome do programador que criou este projeto." "2c5832b05c823917000836c100000000" : "usinagem",
+	"Customer" "S" "Nome do cliente a que este projeto se refere." "2c58ea105c823917000836c300000000" : "",
+	"TextBlocks" "M" "Um suporte de posição para objetos de texto." "2c58a9f05c823917000836c500000000" : {
+	},
+	"HoleTagCatalog" "S" "Último catálogo utilizado para esse projeto." "2c58d3305c823917000836c700000000" : "",
+	"FusionProductionJob" : {
+		"Name" : "${project_pathname(1)}",
+		"Instructions" : "${Project.Notes}",
+		"Tags" : (
+		),
+		"TaskList" : (
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528baf205c86b9620048c05000000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:33a0fb205c823bde000c04ef00000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528b64405c86b9620048c05c00000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:33a158005c823bde000c067800000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528bcce05c86b9620048c06800000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:3bf1d1e05c824e4d000e470a00000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528b30605c86b9620048c07400000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:2b0502405c82502c0010d38600000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528b97c05c86b9620048c08000000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:44d87de05c82513a0012085a00000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528baac05c86b9620048c08c00000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:2a6a97a05c8263d900173a1b00000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528bdb405c86b9620048c09800000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:2a6a6ec05c8263d900173c9600000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528b29c05c86b9620048c0a400000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:2a6a1cc05c8263d900173f2a00000000",
+				"Tags" : (
+				)
+			},
+			{
+				"Name" : "${NCPRef.Name}",
+				"Workstation" : "",
+				"Workcell" "S" "" "528bedc05c86b9620048c0b000000000" : "",
+				"Included" : "1",
+				"Instructions" : "${get_default_task_notes(NCPRef)}",
+				"NCPRef" : "&id:44bc9c505c8266a20018c04b00000000",
+				"Tags" : (
+				)
+			}
+		)
+	},
+	"A360" "M" "Configurações A360 para este projeto PowerMill." : {
+		"Hub" "S" "ID A360 Hub" : "",
+		"Folder" "S" "ID Pasta A360" : "",
+		"Project" "S" "ID Projeto A360" : ""
+	},
+	"ThicknessSets" "M" "Um suporte de posição para configuração sobremetal." "2c5801905c823917000836cd00000000" : {
+	},
+	"PartName" "S" "Nome da peça para este projeto." "2c589ed05c823917000836cf00000000" : "",
+	"ProjectHistory" "LM" "histórico de projeto." "2c5832105c823917000836d100000000" : (
+		{
+			"ClientName" "S" "Nome de produto do cliente." "2c5845105c823917000836d300000000" : "PowerMill",
+			"ClientVersion" "S" "Versão de produto do cliente." "2c58b4705c823917000836d500000000" : "2019103",
+			"DmkCodebase" "S" "Número codebase de bibliotecas Delcam." "2c58e8305c823917000836d700000000" : "2019124"
+		}
+	),
+	"Tolerances" "M" "Um suporte de posição para valores de tolerância." "2c5838705c823917000836d900000000" : {
+	},
+	"OrderNumber" "S" "Número de pedido para este projeto." "2c5864b05c823917000836db00000000" : "",
+	"Notes" "S" "Notas para este projeto." "2c582f705c823917000836dd00000000" : ""
+}
